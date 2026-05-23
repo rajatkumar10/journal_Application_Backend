@@ -5,6 +5,8 @@ import com.journalLatest.Service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,14 +22,22 @@ public class UserController {
         return userService.getAllUsers();
     }
 
-    @PostMapping("/create")
-    public User createUser(@RequestBody User user){
-        return userService.saveEntry(user);
-    }
 
     @PatchMapping("/update")
     public ResponseEntity<?>updateUser(@RequestBody User user){
-        User user1 = userService.updateByName(user);
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String name=authentication.getName();
+        User olduser = userService.findByUsername(name);
+        User user1 = userService.updateByName(olduser,user);
+        return new ResponseEntity<>(user1, HttpStatus.ACCEPTED);
+    }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity<?>deleteUser(){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String name=authentication.getName();
+        User user = userService.findByUsername(name);
+        User user1 = userService.deleteByName(user);
         return new ResponseEntity<>(user1, HttpStatus.ACCEPTED);
     }
 

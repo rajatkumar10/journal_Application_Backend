@@ -6,6 +6,7 @@ import com.journalLatest.Repository.JournalEntryRepository;
 import lombok.RequiredArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,13 +18,19 @@ public class JournalEntryService {
     private final   JournalEntryRepository journalEntryRepository;
     private final UserService userService;
 
+    @Transactional
     public JournalEntry saveEntry(JournalEntry journalEntry, String userName){
-        User user = userService.findByUsername(userName);
-        journalEntry.setDate(LocalDateTime.now());
-        JournalEntry saved = journalEntryRepository.save(journalEntry);
-        user.getJournalEntries().add(saved);
-        userService.saveEntry(user);
-        return journalEntry;
+        try {
+            User user = userService.findByUsername(userName);
+            journalEntry.setDate(LocalDateTime.now());
+            JournalEntry saved = journalEntryRepository.save(journalEntry);
+            user.getJournalEntries().add(saved);
+            userService.saveEntry(user);
+            return journalEntry;
+        } catch (Exception e) {
+            System.out.println(e);
+            throw new RuntimeException("An eror occured"+e);
+        }
     }
     public List<JournalEntry>getAllEntries(){
         return journalEntryRepository.findAll();
