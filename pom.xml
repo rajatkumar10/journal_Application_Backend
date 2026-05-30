@@ -18,7 +18,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ret</name>
 	<properties>
-		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.host.url>http://sonarcloud.io</sonar.host.url>
+		<sonar.organization>journal-app-backend</sonar.organization>
 	</properties>
 	<description>Demo project for Spring Boot 2.7.15</description>
 	<dependencies>
