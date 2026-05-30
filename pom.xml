@@ -17,6 +17,9 @@
 	<artifactId>ret</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ret</name>
+	<properties>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+	</properties>
 	<description>Demo project for Spring Boot 2.7.15</description>
 	<dependencies>
 
@@ -57,6 +60,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.7.0.1746</version>
 			</plugin>
 		</plugins>
 	</build>

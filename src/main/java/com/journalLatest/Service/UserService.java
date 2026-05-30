@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public class UserService {
     private final UserRepository userRepository;
     private static final PasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
-
+    private static final Logger logger= (Logger) LoggerFactory.getLogger(UserService.class);
     public User saveNewUser(User user){
         try {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
@@ -28,7 +28,7 @@ public class UserService {
             userRepository.save(user);
             return user;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.warning(e.getMessage());
         }
         return user;
     }
