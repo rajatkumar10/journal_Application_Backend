@@ -1,0 +1,80 @@
+26-05-30 16:05:32.418 [SpringApplicationShutdownHook] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:122158}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:40.330 [main] INFO  com.journalLatest.JornalApplication - Starting JornalApplication using Java 21.0.4 on LAPTOP-H6MCVL77 with PID 30972 (C:\jornal\journal_Application_Backend\target\classes started by 91828 in C:\jornal\journal_Application_Backend) 
+26-05-30 16:05:40.333 [main] INFO  com.journalLatest.JornalApplication - The following 1 profile is active: "prod" 
+26-05-30 16:05:41.324 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+26-05-30 16:05:41.426 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 MongoDB repository interfaces. 
+26-05-30 16:05:42.456 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http) 
+26-05-30 16:05:42.477 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] 
+26-05-30 16:05:42.485 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+26-05-30 16:05:42.486 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79] 
+26-05-30 16:05:42.614 [main] INFO  o.a.c.c.C.[.[localhost].[/journal] - Initializing Spring embedded WebApplicationContext 
+26-05-30 16:05:42.615 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2198 ms 
+26-05-30 16:05:43.007 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.4+7-LTS", "application": {"name": "Cluster0"}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='rajat', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@29be997f]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.2wfvvt9.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-azlc8l-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null} 
+26-05-30 16:05:43.083 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-srv-cluster0.2wfvvt9.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017 to client view of cluster 
+26-05-30 16:05:43.131 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-srv-cluster0.2wfvvt9.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 to client view of cluster 
+26-05-30 16:05:43.133 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-srv-cluster0.2wfvvt9.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017 to client view of cluster 
+26-05-30 16:05:43.562 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@c1e14f from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out 
+26-05-30 16:05:54.716 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017 
+com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:684)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:555)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:381)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:329)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:101)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:45)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:182)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:99)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:552)
+	... 10 common frames omitted
+26-05-30 16:05:55.012 [cluster-rtt-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:112516}] to ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:55.012 [cluster-rtt-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:112228}] to ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:55.012 [cluster-rtt-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:122332}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:55.089 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:122313}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:55.091 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10826951300, setName='atlas-azlc8l-shard-0', canonicalAddress=ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, hosts=[ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000164, setVersion=49, topologyVersion=TopologyVersion{processId=6a17383e9ac1754d85a54e74, counter=6}, lastWriteDate=Sat May 30 16:05:54 IST 2026, lastUpdateTimeNanos=526783846680799} 
+26-05-30 16:05:55.096 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000164 from replica set primary ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:55.096 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 49 from replica set primary ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:55.096 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-05-30 16:05:57.202 [cluster-ClusterId{value='6a1abd7e8b736557b5f01fc7', description='null'}-ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017 
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:337)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:101)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:45)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:182)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1385)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:614)
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 10 common frames omitted
+26-05-30 16:05:58.606 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:122293}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 

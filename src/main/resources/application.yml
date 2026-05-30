@@ -12,3 +12,7 @@ logging:
     net:
       jornal:
         journal_Application_Backend: DEBUG
+
+weather:
+  api:
+    key: d988585a2a204005103c8383bde14add

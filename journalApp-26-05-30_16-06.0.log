@@ -1,0 +1,20 @@
+26-05-30 16:06:00.221 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [C:\jornal\journal_Application_Backend\target\classes\com\journalLatest\Controllers\UserController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.journalLatest.Service.WeatherService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {} 
+26-05-30 16:06:04.358 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
+26-05-30 16:06:04.386 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+26-05-30 16:06:04.415 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.journalLatest.Controllers.UserController required a bean of type 'com.journalLatest.Service.WeatherService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.journalLatest.Service.WeatherService' in your configuration.
+ 
