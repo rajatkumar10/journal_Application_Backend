@@ -5,6 +5,8 @@ import com.journalLatest.Entity.User;
 import com.journalLatest.Repository.JournalEntryRepository;
 import lombok.RequiredArgsConstructor;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +19,7 @@ import java.util.Optional;
 public class JournalEntryService {
     private final   JournalEntryRepository journalEntryRepository;
     private final UserService userService;
+    private static final Logger logger= LoggerFactory.getLogger(JournalEntryService.class);
 
     @Transactional
     public JournalEntry saveEntry(JournalEntry journalEntry, String userName){
@@ -28,7 +31,7 @@ public class JournalEntryService {
             userService.saveUser(user);
             return journalEntry;
         } catch (Exception e) {
-            System.out.println(e);
+            logger.info(e.getMessage());
             throw new RuntimeException("An eror occured"+e);
         }
     }
