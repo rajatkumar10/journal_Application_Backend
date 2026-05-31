@@ -44,7 +44,7 @@ public class UserController {
         User user1 = userService.deleteByName(user);
         return new ResponseEntity<>(user1, HttpStatus.ACCEPTED);
     }
-    @GetMapping("get")
+    @GetMapping("/get")
     public ResponseEntity<?> greeting() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         WeatherResponse weatherResponse = weatherService.getWeather("Mumbai");

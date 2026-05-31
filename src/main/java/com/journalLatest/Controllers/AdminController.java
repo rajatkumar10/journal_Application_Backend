@@ -1,5 +1,6 @@
 package com.journalLatest.Controllers;
 
+import com.journalLatest.Cache.AppCache;
 import com.journalLatest.Entity.User;
 import com.journalLatest.Service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +15,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class AdminController {
     private final UserService userService;
+    private final AppCache appCache;
+
     @GetMapping("/all-users")
     public ResponseEntity<List<User>> getAllUsers(){
         List<User> allUsers = userService.getAllUsers();
@@ -25,5 +28,10 @@ public class AdminController {
     @PostMapping("/create-admin-user")
     public void createUser(@RequestBody User user){
         userService.saveAdmin(user);
+    }
+
+    @GetMapping("clear-app-cache")
+    public void clearAppCache(){
+        appCache.init();
     }
 }
