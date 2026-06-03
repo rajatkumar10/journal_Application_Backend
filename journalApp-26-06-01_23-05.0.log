@@ -1,0 +1,152 @@
+26-06-01 23:05:26.308 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.journalLatest.Service.EmailServiceTests], using SpringBootContextLoader 
+26-06-01 23:05:26.325 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.journalLatest.Service.EmailServiceTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+26-06-01 23:05:26.326 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.journalLatest.Service.EmailServiceTests]: EmailServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+26-06-01 23:05:26.523 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.journalLatest.JornalApplication for test class com.journalLatest.Service.EmailServiceTests 
+26-06-01 23:05:26.684 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+26-06-01 23:05:26.730 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@40cb698e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3382f8ae, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@60641ec8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75f65e45, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6eeade6c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a891c97, org.springframework.test.context.transaction.TransactionalTestExecutionListener@a5bd950, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d18aa28, org.springframework.test.context.event.EventPublishingTestExecutionListener@75390459, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7756c3cd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2313052e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2bd2b28e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@16746061, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@57fd91c9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6cfcd46d] 
+26-06-01 23:05:27.362 [main] INFO  c.j.Service.EmailServiceTests - Starting EmailServiceTests using Java 21.0.4 on LAPTOP-H6MCVL77 with PID 17992 (started by 91828 in C:\jornal\journal_Application_Backend) 
+26-06-01 23:05:27.363 [main] INFO  c.j.Service.EmailServiceTests - The following 1 profile is active: "dev" 
+26-06-01 23:05:28.237 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+26-06-01 23:05:28.338 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 3 MongoDB repository interfaces. 
+26-06-01 23:05:29.907 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/21.0.4+7-LTS", "application": {"name": "Cluster0"}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='rajat', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@d88f893]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.2wfvvt9.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-azlc8l-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null} 
+26-06-01 23:05:30.089 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-srv-cluster0.2wfvvt9.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017 to client view of cluster 
+26-06-01 23:05:30.125 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-srv-cluster0.2wfvvt9.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 to client view of cluster 
+26-06-01 23:05:30.126 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-srv-cluster0.2wfvvt9.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017 to client view of cluster 
+26-06-01 23:05:30.387 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@6aa5974e from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out 
+26-06-01 23:05:31.868 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:210733}] to ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.869 [cluster-rtt-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:210733}] to ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.869 [cluster-rtt-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:230155}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.869 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:229944}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.868 [cluster-rtt-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:211279}] to ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.869 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:211279}] to ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.870 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=963949700, setName='atlas-azlc8l-shard-0', canonicalAddress=ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017, hosts=[ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=49, topologyVersion=TopologyVersion{processId=6a173a9ae8cae516c810b2e0, counter=3}, lastWriteDate=Mon Jun 01 23:05:33 IST 2026, lastUpdateTimeNanos=7011597517800} 
+26-06-01 23:05:31.870 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=964157100, setName='atlas-azlc8l-shard-0', canonicalAddress=ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, hosts=[ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000164, setVersion=49, topologyVersion=TopologyVersion{processId=6a17383e9ac1754d85a54e74, counter=6}, lastWriteDate=Mon Jun 01 23:05:33 IST 2026, lastUpdateTimeNanos=7011597685800} 
+26-06-01 23:05:31.871 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=964382600, setName='atlas-azlc8l-shard-0', canonicalAddress=ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, hosts=[ac-tkvevuv-shard-00-00.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017, ac-tkvevuv-shard-00-01.2wfvvt9.mongodb.net:27017], passives=[], arbiters=[], primary='ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='euw1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=49, topologyVersion=TopologyVersion{processId=6a173937ce104076b302827f, counter=4}, lastWriteDate=Mon Jun 01 23:05:33 IST 2026, lastUpdateTimeNanos=7011597911100} 
+26-06-01 23:05:31.878 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000164 from replica set primary ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.879 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 49 from replica set primary ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:31.879 [cluster-ClusterId{value='6a1dc2e1ffb3065c64d16c71', description='null'}-ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:33.562 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:230059}] to ac-tkvevuv-shard-00-02.2wfvvt9.mongodb.net:27017 
+26-06-01 23:05:34.931 [main] WARN  o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailService': Unsatisfied dependency expressed through field 'javaMailSender'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.mail.javamail.JavaMailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+26-06-01 23:05:35.954 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+26-06-01 23:05:36.022 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field javaMailSender in com.journalLatest.Service.EmailService required a bean of type 'org.springframework.mail.javamail.JavaMailSender' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.mail.javamail.JavaMailSender' in your configuration.
+ 
+26-06-01 23:05:36.032 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@40cb698e] to prepare test instance [com.journalLatest.Service.EmailServiceTests@5d601832] 
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailService': Unsatisfied dependency expressed through field 'javaMailSender'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.mail.javamail.JavaMailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 71 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.mail.javamail.JavaMailSender' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 90 common frames omitted
